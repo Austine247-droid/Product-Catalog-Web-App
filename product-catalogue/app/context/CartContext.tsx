@@ -20,7 +20,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setCart(prev => [...prev, item])
   }
 
-  // Remove one item or remove completely if quantity is 1
+  // Remove one item
   const removeFromCart = (id: number) => {
     setCart(prev => prev.filter(item => item.id !== id))
   }
