@@ -4,7 +4,7 @@ export async function GET(req: NextRequest, context: { params: Promise<{ id: str
   const { id } = await context.params // 👈 await here because params is a Promise
 
   try {
-    const res = await fetch(`https://fakestoreapi.com/products/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/${id}`, {
       cache: 'no-store',
     })
 
