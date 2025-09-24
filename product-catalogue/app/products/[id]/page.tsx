@@ -2,7 +2,7 @@ import { Product } from '@/interfaces'
 import Image from 'next/image'
 
 export default async function ProductDetailPage({ params }: { params: { id: string } }) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${params.id}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/products/${params.id}`, {
     cache: 'no-store',
   })
   if (!res.ok) throw new Error('Failed to fetch product')
