@@ -121,8 +121,7 @@ product-catalogue/
 
 👉Cart Page
 
--Implemented global state management using Context API.
-
+- Implemented global state management using Context API.
 - Stored products in the cart with id, title, price, and quantity.
 - Added remove button to delete individual items.
 - Calculated total price dynamically using reduce().
